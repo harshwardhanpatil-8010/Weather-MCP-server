@@ -1,9 +1,17 @@
+# Ignore Docker and Git files
 Dockerfile
 docker-compose.yml
 .dockerignore
 .git
 .gitignore
+
+# Ignore Python artifacts
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment and environment files
 venv/
 .venv/
+.env
