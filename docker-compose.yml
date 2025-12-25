@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mcp-app:latest
+    container_name: mcp-app
+    # Restart policy to ensure the service comes back up if it exits
+    # 'on-failure' is suitable for services that run and complete a task
+    restart: on-failure
